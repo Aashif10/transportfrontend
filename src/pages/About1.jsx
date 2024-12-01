@@ -1,9 +1,11 @@
 import React from "react";
+import Navbar1 from "../Components/Navbar1";
 
 const About1 = () => {
   return (
     <>
       <section className="about py-10 bg-gray-100" id="about">
+        <Navbar1></Navbar1>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Image Section */}

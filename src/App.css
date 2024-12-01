@@ -14,6 +14,9 @@
 /********************** HERO SECTION COMPONENT STYLING **************************/
 /**********************************************************************************************************************/
 nav {
+  text-decoration: none;
+  border: none;
+  outline: none;
   display: flex;
   max-width: 1500px;
   min-width: 1500px;
@@ -26,15 +29,7 @@ nav {
     border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
 }
-nav::after {
-  content: "";
-  position: absolute;
-  height: 0.6px;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgb(201, 201, 255);
-}
+
 nav .logo {
   flex: 1;
   display: flex;
@@ -389,13 +384,13 @@ nav svg {
   color: #fff;
 }
 .about .container .banner a:hover {
-  color: #fff;
-  background: #111;
+  color:black;
+  background: orange;
   transition: ease-in-out 0.3s;
 }
 .about .container .banner a:hover span {
-  background: #fff;
-  color: #111;
+  background: black;
+  color: orange;
 }
 @media (max-width: 1520px) {
   .about {

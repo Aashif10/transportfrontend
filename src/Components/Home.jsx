@@ -1,7 +1,7 @@
 import React from 'react'
 import About from '../pages/About'
 import Qualities from '../pages/Qualities'
-// import WhoAreWe from '../pages/Whoarewe'
+import WhoAreWe from '../pages/Whoarewe'
 import Team from '../pages/Team'
 import Reservation from '../pages/Reservation'
 import Footer from '../pages/Footer'
@@ -11,6 +11,7 @@ import About2 from '../pages/About2'
 import Menu from '../pages/Menu'
 import Navbar1 from './Navbar1'
 import Footer1 from '../pages/Footer1'
+import Services from '../pages/Services'
 
 const Home = () => {
   return (
@@ -20,14 +21,13 @@ const Home = () => {
       <Menu></Menu>
       <Qualities></Qualities>
       <About></About>
+      <Services></Services>
       <About1></About1>
       <About2></About2>
-      {/* <WhoAreWe></WhoAreWe> */}
-    
+      <WhoAreWe></WhoAreWe>
       <Team></Team>
       <Reservation></Reservation>
       <Footer1></Footer1>
-      {/* <Footer></Footer> */}
       
 
     </>

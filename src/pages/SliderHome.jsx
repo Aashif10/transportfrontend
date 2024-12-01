@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-// import Navbar from "../Components/Navbar";
-import image from "../Truck/goooggoo.png";
 import front from "../../public/front2.jpg"
 import { Link, useNavigate } from "react-router-dom";
 
@@ -17,9 +15,7 @@ const SliderHome = () => {
       <div className="bg-cover bg-center bg-no-repeat h-screen flex flex-col justify-center items-center relative" style={{ // backgroundImage: `url('https://c1.wallpaperflare.com/preview/84/73/279/truck-lorry-transportation-logistics.jpg')`
           backgroundImage: `url(${front})` }}>
         {/* Logo */}
-        <div className="absolute top-4 left-4">
-          <img src={image} alt="Logo" className="h-20 w-auto" />
-        </div>
+       
 
         {/* Content */}
         <div className="bg-black bg-opacity-50 text-white p-6 rounded text-center">
@@ -30,7 +26,7 @@ const SliderHome = () => {
             Efficient and comfortable transportation services for all
           </p>
           <Link to="reservation">
-            <button className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition" onClick={()=>Navigate("/reservation")}>
+            <button className="bg-black  text-white hover:text-black px-6 py-2 rounded hover:bg-orange-500 transition" onClick={()=>Navigate("/reservation")}>
               Book Your Transportation Service
             </button>
           </Link>

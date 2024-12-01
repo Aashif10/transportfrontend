@@ -6,8 +6,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { FaArrowRightArrowLeft } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import { LuPhoneCall } from "react-icons/lu";
-
 import "../App.css";
+import Navbar1 from "../Components/Navbar1";
 
 const Reservation = () => {
   const form = useRef();
@@ -36,18 +36,20 @@ const Reservation = () => {
   };
 
   return <section className="reservation padding-4" id="reservation">
+      <Navbar1 />
+
       <div className="container">
         {/* Home Button */}
-        <div className="home-button-container ">
-          <button id="home-button" onClick={() => navigate("/")}>
+        {/* <div className="home-button-container mt-10">
+          <button id="home-button" className="px-4 py-2 text-black  rounded-lg shadow-lg flex items-center justify-center gap-2 transition-all hover:bg-orange-600 sm:text-sm md:text-lg lg:text-xl" onClick={() => navigate("/")}>
             HOME <span>
               <HiOutlineArrowNarrowRight />
             </span>
           </button>
-        </div>
+        </div> */}
 
         <div className="mt-6  ml-4">
-          <h1 className="text-gray-300 mt-2 ml-2 font-semibold">
+          <h1 className="text-gray-300 mt-4 ml-2 font-semibold">
             Moving Services
           </h1>
           <h1 className="text-6xl font-bold text-orange-500 p-2">
@@ -99,15 +101,16 @@ const Reservation = () => {
               <div>
                 <input type="date" placeholder="Date" name="from_date" required />
                 <select name="from_time" id="options" required>
-                  <option value=""  disabled selected>
+                  <option value="" disabled selected>
                     Select vehicles
                   </option>
                   <option value="None">None</option>
                   <option value="Car Relocation">Car Relocation</option>
                   <option value="bike Relocation">Bike Relocation</option>
-                  <option value="Single Container Service">Single Container service</option>
+                  <option value="Single Container Service">
+                    Single Container service
+                  </option>
                   <option value="Movers & Parkers">Mover & parker</option>
-                
                 </select>
               </div>
               <div className="flex items-center space-x-4">

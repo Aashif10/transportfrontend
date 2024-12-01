@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { HiOutlineArrowRight } from "react-icons/hi";
+import Navbar1 from "../Components/Navbar1";
 
 const About = () => {
   return (
     <>
       <section className="about" id="about">
+        <Navbar1></Navbar1>
         <div className="container">
           <div className="banner">
             <div className="top">
