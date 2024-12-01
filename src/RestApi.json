@@ -1,0 +1,199 @@
+{
+    "data": [
+        {"ourQualities" : [
+            {
+                "id": 1,
+                "image": "./Reliable-removebg-preview.png",
+                "title": "RELIABILITY",
+                "description": "Reliable car transport ensures vehicles are securely loaded and delivered without damage." 
+            },
+            {
+                "id": 2,
+                "image": "./safety-removebg-preview.png",
+                "title": "SAFETY",
+                "description": "Car transport ensures vehicles are securely handled, reducing risks of damage during transit." 
+            },
+            {
+                "id": 3,
+                "image": "./Delivery-removebg-preview.png",
+                "title": "FAST DELIVERY",
+                "description": "Fast delivery car transport ensures your vehicle reaches its destination quickly, securely, and on time." 
+            }
+        ],
+        "dishes": [
+            {
+                "id": 1,
+                "image": "./18Car Shipping Instant Quotes.jpg",
+                "title": "ROASTED LAMB RUMP",
+                "category": "Dinner"
+            },
+            {
+                "id": 2,
+                "image": "./Car Transport Services in Navi Mumbai at Southern Cargo.jpg",
+                "title": "CITRUS CURED SALMON",
+                "category": "Dinner"
+            },
+            {
+                "id": 3,
+                "image": "./download (1).jpg",
+                "title": "PAN SEARED SEA BASS",
+                "category": "Breakfast"
+            },
+            {
+                "id": 4,
+                "image": "./New delivery Q7.jpg",
+                "title": "STUFFED STRAWBERRY",
+                "category": "Dinner"
+            },
+            {
+                "id": 5,
+                "image": "./14Lamborghini Aventador.jpg",
+                "title": "BEEF BURGER MEAL",
+                "category": "Lunch"
+            },
+            {
+                "id": 6,
+                "image": "./download (1).jpg",
+                "title": "MUSSELS SOUP",
+                "category": "Dinner"
+            },
+            {
+                "id": 7,
+                "image": "./16Angel_co.jpg",
+                "title": "ITALIAN SPAGHETTI",
+                "category": "Dinner"
+            },
+            {
+                "id": 8,
+                "image": "./arif3.jpg",
+                "title": "GRILLED FISH",
+                "category": "Dinner"
+            },
+            {
+                "id": 9,
+                "image": "./19CAR TRANSPORTING SERVICES.jpg",
+                "title": "GRILLED FISH",
+                "category": "Dinner"
+            },
+            {
+                "id": 10,
+                "image": "./Car shipping to Pakistan from UK.jpg",
+                "title": "GRILLED FISH",
+                "category": "Dinner"
+            },
+            {
+                "id": 11,
+                "image": "./arif1.jpg",
+                "title": "GRILLED FISH",
+                "category": "Dinner"
+            },
+            {
+                "id": 12,
+                "image": "/arif2.jpg",
+                "title": "GRILLED FISH",
+                "category": "Dinner"
+            }
+           
+        ],
+        "team": [
+            {
+                "id": 1,
+                "image": "./men.jpg",
+                "name": "JOHNATHAN TYLER",
+                "designation": "Founder"
+            },
+            {
+                "id": 2,
+                "image": "./men5.avif",
+                "name": "WADE WARREN",
+                "designation": "Co Founder"
+            },
+            {
+                "id": 3,
+                "image": "./men3.avif",
+                "name": "JHON DOE",
+                "designation": "Manager"
+            },
+            {
+                "id": 4,
+                "image": "./men4.jpg",
+                "name": "ALEX COAL",
+                "designation": "Accountant"
+            }
+        ],
+        "testimonials": [
+            {
+                "id": 1,
+                "image": "./review1.png",
+                "description": "Morbi nulla nec dui lacus, in. Libero in pretium metus massa. Sodales dignissim vitae mauris varius faucibus. Eleifend dui, non laoreet ac luctus facilisis diam. Enim scelerisque vel at id viverra tellus.",
+                "rating": 4,
+                "userName": "Jane Cooper"
+            },
+            {
+                "id": 2,
+                "image": "./review2.png",
+                "description": "Tortor vel nunc netus pharetra enim, enim dolor mauris in. Sit nam fringilla in egestas. Libero condimentum quis in vulputate adipiscing venenatis augue. Venenatis faucibus.",
+                "rating": 4.5,
+                "userName": "Esther Howard"
+            },
+            {
+                "id": 3,
+                "image": "./review3.png",
+                "description": "Tortor vel nunc netus pharetra enim, enim dolor mauris in. Sit nam fringilla in egestas. Libero condimentum quis in vulputate adipiscing venenatis augue. Venenatis faucibus.",
+                "rating": 5,
+                "userName": "Guy Hawkins"
+            }
+        ],
+        "who_we_are": [
+            {
+                "id": 1,
+                "number": "14",
+                "title": "Station"
+            },
+            {
+                "id": 2,
+                "number": "20",
+                "title": "Member"
+            },
+            {
+                "id": 3,
+                "number": "10",
+                "title": "Years Of Experience"
+            },
+            {
+                "id": 4,
+                "number": "500+",
+                "title": "Car Delivered"
+            }
+        ],
+        "navbarLinks": [
+            {
+                "id": 1,
+                "title": "HOME",
+                "link": "heroSection"
+            },
+            {
+                "id": 2,
+                "title": "ABOUT US",
+                "link": "about"
+            },
+            {
+                "id": 3,
+                "title": "SERVICES",
+                "link": "qualities"
+            },
+            {
+                "id": 4,
+                "title": "TEAM",
+                "link": "team"
+            },
+            {
+                "id": 5,
+                "title": "Reservation",
+                "link": "reservation"
+            }
+        ]
+    
+    } 
+    ]
+}
