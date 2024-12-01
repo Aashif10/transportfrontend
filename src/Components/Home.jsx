@@ -1,7 +1,7 @@
 import React from 'react'
 import About from '../pages/About'
 import Qualities from '../pages/Qualities'
-import WhoAreWe from '../pages/Whoarewe'
+// import WhoAreWe from '../pages/Whoarewe'
 import Team from '../pages/Team'
 import Reservation from '../pages/Reservation'
 import Footer from '../pages/Footer'
@@ -22,7 +22,7 @@ const Home = () => {
       <About></About>
       <About1></About1>
       <About2></About2>
-      <WhoAreWe></WhoAreWe>
+      {/* <WhoAreWe></WhoAreWe> */}
     
       <Team></Team>
       <Reservation></Reservation>
