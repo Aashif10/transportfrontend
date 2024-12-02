@@ -7,7 +7,6 @@ import { FaArrowRightArrowLeft } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import { LuPhoneCall } from "react-icons/lu";
 import "../App.css";
-import Navbar1 from "../Components/Navbar1";
 
 const Reservation = () => {
   const form = useRef();
@@ -36,7 +35,6 @@ const Reservation = () => {
   };
 
   return <section className="reservation padding-4" id="reservation">
-      <Navbar1 />
 
       <div className="container">
         {/* Home Button */}
@@ -48,7 +46,7 @@ const Reservation = () => {
           </button>
         </div> */}
 
-        <div className="mt-6  ml-4">
+        <div className="mt-6  ml-12">
           <h1 className="text-gray-300 mt-4 ml-2 font-semibold">
             Moving Services
           </h1>
@@ -81,7 +79,7 @@ const Reservation = () => {
               <LuPhoneCall />
             </h2>
             <h2 className="text-2xl text-orange-500 mt-7 ml-2">
-              +919953253431
+              9953253431
             </h2>
           </div>
         </div>

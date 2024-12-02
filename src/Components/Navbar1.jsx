@@ -10,7 +10,7 @@ const Navbar1 = () => {
   };
 
   return (
-    <nav className="flex items-center fixed top-0 left-0 z-10 justify-between px-6 py-4 bg-white w-full ">
+    <nav className="flex items-center z-10 justify-between px-6 py-4 bg-white w-full ">
       {/* Logo */}
       <div className="flex items-center">
         <h1 className="text-2xl font-bold">
@@ -45,7 +45,7 @@ const Navbar1 = () => {
         <Link to="/blog" className="hover:text-orange-500 no-underline">
           Blog
         </Link>
-        <Link to="/reservation" className="hover:text-orange-500 no-underline">
+        <Link to="/contact" className="hover:text-orange-500 no-underline">
           Contact
         </Link>
       </div>

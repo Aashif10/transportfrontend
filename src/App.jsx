@@ -11,6 +11,7 @@ import Single from "./pages/Single";
 import MoversAndPackers from "./pages/MoversAndPackers";
 import CarRelocation from "./pages/CarRelocation";
 import Bike from "./pages/Bike";
+import Blog from "./pages/Blog";
 
 const App = () => {
   return (
@@ -19,14 +20,14 @@ const App = () => {
         <Route path="/" element={<Home></Home>} />
         <Route path="/success" element={<Success></Success>} />
         <Route path="/*" element={<NotFound></NotFound>} />
-        <Route path="/reservation" element={<Reservation></Reservation>}></Route>
+        <Route path="/contact" element={<Reservation></Reservation>}></Route>
         <Route path="/services" element={<Services></Services>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/single" element={<Single></Single>}></Route>
         <Route path="/mover" element={<MoversAndPackers></MoversAndPackers>}></Route>
         <Route path="/carRelocation" element={<CarRelocation></CarRelocation>}></Route>
         <Route path="/bike" element={<Bike></Bike>}></Route>
-
+        <Route path="/blog" element={<Blog></Blog>}></Route>
       </Routes>
       <ToastContainer
 position="top-right"

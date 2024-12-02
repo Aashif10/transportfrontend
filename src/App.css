@@ -14,14 +14,11 @@
 /********************** HERO SECTION COMPONENT STYLING **************************/
 /**********************************************************************************************************************/
 nav {
-  text-decoration: none;
-  border: none;
-  outline: none;
+  
   display: flex;
   max-width: 1500px;
   min-width: 1500px;
-  /* height: 00px; */
-  padding: 25px 10px 40px 10px;
+  padding: 10px;
   margin-bottom: 25px;
   justify-content: space-between;
   position: relative;
@@ -29,13 +26,20 @@ nav {
     border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
 }
+/* nav::after {
+  content: "";
+  position: absolute;
+  height: 0.6px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(201, 201, 255); */
 
 nav .logo {
   flex: 1;
   display: flex;
   align-items: center;
-  font-size: 1rem;
- 
+  font-size: 2rem;
 }
 nav .navLinks {
   flex: 2;
@@ -57,8 +61,7 @@ nav .navLinks .links a {
   letter-spacing: 1.4px;
 }
 nav .navLinks .links a:hover {
-  color: black;
-  font-weight:bold;
+  color: #222;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -150,6 +153,7 @@ nav svg {
     border-radius: 0;
   }
 }
+ 
 /**********************************************************************************************************************/
 
 /********************** HERO SECTION COMPONENT STYLING **************************/
@@ -1141,4 +1145,75 @@ transition: 2s ;
   border-bottom: 1px solid black;
   outline: none;
   
+}
+/* General form styling */
+.reservation_form_box {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input fields styling */
+.reservation_form_box input,
+.reservation_form_box select {
+  width: 100%;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Flexbox adjustment for From-To fields */
+.reservation_form_box .flex {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.reservation_form_box .flex input {
+  width: 100%;
+}
+
+/* Button styling */
+
+#button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #f97316;
+  color: black;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+#button:hover {
+  background-color: #ea580c;
+  color: black;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .reservation_form_box .flex {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .reservation_form_box .flex input {
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .reservation_form_box {
+    margin: 0 auto;
+  }
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import front from "../../public/front2.jpg"
 import { Link, useNavigate } from "react-router-dom";
+import Navbar from "../Components/Navbar";
 
 
 const SliderHome = () => {

@@ -38,7 +38,6 @@ const Services = () => {
 
   return (
     <div>
-      <Navbar1 />
       <section className="py-16 mt-10 bg-gray-100">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Heading */}
