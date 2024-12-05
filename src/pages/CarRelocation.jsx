@@ -1,5 +1,8 @@
 import React from "react";
-
+import img1 from "../../public/car1.jpg"
+import img2 from "../../public/car2.jpg"
+import img3 from "../../public/car3.avif"
+import img4 from "../../public/car4.jpg"
 const CarRelocation = () => {
   return (
     <div className="bg-gray-50 py-16">
@@ -35,7 +38,7 @@ const CarRelocation = () => {
           </div>
           <div className="flex justify-center">
             <img
-              src="../../public/car3.avif" // Replace with your own image URL
+              src={img1} // Replace with your own image URL
               alt="Secure Car Transport"
               className="rounded-lg shadow-xl"
             />
@@ -46,7 +49,7 @@ const CarRelocation = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mt-16">
           <div className="flex justify-center">
             <img
-              src="../../public/car2.jpg" // Replace with your own image URL
+              src={img2} // Replace with your own image URL
               alt="Loading Process"
               className="rounded-lg shadow-xl"
             />
@@ -82,7 +85,7 @@ const CarRelocation = () => {
           </div>
           <div className="flex justify-center">
             <img
-              src="../../public/car1.jpg" // Replace with your own image URL
+              src={img3} // Replace with your own image URL
               alt="Car Delivery"
               className="rounded-lg shadow-xl"
             />
