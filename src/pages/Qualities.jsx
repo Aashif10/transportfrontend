@@ -1,6 +1,6 @@
 
 import React from 'react'
-import {data} from '../restApi.json'
+import {data} from '../RestApi.json'
 const Qualities = () => {
   return (
     <>
