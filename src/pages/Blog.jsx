@@ -6,8 +6,12 @@ import img4 from "../../public/blog4.jpg"
 import img5 from "../../public/blog5.jpg"
 import img6 from "../../public/blog6.jpg"
 import img7 from "../../public/blog7.jpg"
+import Navbar1 from "../Components/Navbar1";
 
 const Blog = () => {
+  const path = window.location.pathname;
+
+
   const featuredPost = {
     title: "The Role of Transportation in Smart Cities",
     image:{img1}, // Replace with your image URL
@@ -70,6 +74,8 @@ const Blog = () => {
   ];
 
   return (
+    <>
+{ path==="/blog"&& <Navbar1/>}
     <div className="bg-gray-100 p-6 md:p-10">
       {/* Featured Post */}
       <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
@@ -132,7 +138,9 @@ const Blog = () => {
         </div>
       </div>
     </div>
-  );
+    </>
+      );
+      
 };
 
 export default Blog;

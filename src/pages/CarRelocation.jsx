@@ -2,7 +2,6 @@ import React from "react";
 import img1 from "../../public/car1.jpg"
 import img2 from "../../public/car2.jpg"
 import img3 from "../../public/car3.avif"
-import img4 from "../../public/car4.jpg"
 const CarRelocation = () => {
   return (
     <div className="bg-gray-50 py-16">

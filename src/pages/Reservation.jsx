@@ -7,8 +7,10 @@ import { FaArrowRightArrowLeft } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import { LuPhoneCall } from "react-icons/lu";
 import "../App.css";
+import Navbar1 from "../Components/Navbar1";
 
 const Reservation = () => {
+  const path = window.location.pathname;
   const form = useRef();
   const navigate = useNavigate();
 
@@ -34,7 +36,11 @@ const Reservation = () => {
       );
   };
 
-  return <section className="reservation padding-4" id="reservation">
+  return(
+  <>
+     {path==="/contact" && <Navbar1/>}
+
+  <section className="reservation padding-4" id="reservation">
 
       <div className="container">
         {/* Home Button */}
@@ -129,6 +135,7 @@ const Reservation = () => {
         </div>
       </div>
     </section>;
+    </>)
 };
 
 export default Reservation;
