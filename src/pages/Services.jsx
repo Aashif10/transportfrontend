@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Services = () => {
   const path = window.location.pathname
-  console.log(path);
+  // console.log(path);
   
   const services = [
     {
