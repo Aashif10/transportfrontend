@@ -1,4 +1,8 @@
 import React from "react";
+import img1 from "../../public/bike1.webp"
+import img2 from "../../public/bike2.webp"
+import img3 from "../../public/bike3.webp"
+import img4 from "../../public/bike4.jpg"
 
 const Bike = () => {
   return (
@@ -18,7 +22,7 @@ const Bike = () => {
       <div className="flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-8">
         <div className="flex-1">
           <img
-            src="../../public/bike1.webp" // Replace with your own image URL
+            src={img1} // Replace with your own image URL
             alt="Bike Relocation"
             className="rounded-lg shadow-lg w-full md:w-4/5 mx-auto"
           />
@@ -51,7 +55,7 @@ const Bike = () => {
           <div className="flex flex-col items-center bg-gray-100 p-6 rounded-lg shadow-lg">
             <div className="mb-4">
               <img
-                src="../../public/bike2.webp" // Replace with your own image URL
+                src={img2} // Replace with your own image URL
                 alt="Bike Pickup"
                 className="rounded-full w-24 h-24 object-cover"
               />
@@ -65,7 +69,7 @@ const Bike = () => {
           <div className="flex flex-col items-center bg-gray-100 p-6 rounded-lg shadow-lg">
             <div className="mb-4">
               <img
-                src="../../public/bike3.webp" // Replace with your own image URL
+                src={img3} // Replace with your own image URL
                 alt="Transport"
                 className="rounded-full w-24 h-24 object-cover"
               />
@@ -81,7 +85,7 @@ const Bike = () => {
           <div className="flex flex-col items-center bg-gray-100 p-6 rounded-lg shadow-lg">
             <div className="mb-4">
               <img
-                src="../../public/bike4.jpg" // Replace with your own image URL
+                src={img4} // Replace with your own image URL
                 alt="Delivery"
                 className="rounded-full w-24 h-24 object-cover"
               />
