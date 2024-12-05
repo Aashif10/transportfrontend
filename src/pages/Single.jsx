@@ -1,5 +1,8 @@
 import React from "react";
 import img1 from '../../public/single.jpg'
+import img2 from "../../public/single1.webp"
+import img3 from "../../public/single2.webp"
+import img4 from '../../public/single4.jpg'
 const Single = () => {
   return (
     <div className="bg-gray-100 py-16">
@@ -51,7 +54,7 @@ const Single = () => {
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div>
             <img
-              src="../../public/single1.webp"
+              src={img2}
               alt="Container Loading"
               className="w-full rounded-lg shadow-lg"
             />
@@ -61,7 +64,7 @@ const Single = () => {
           </div>
           <div>
             <img
-              src="../../public/single2.webp"
+              src={img3}
               alt="Container in Transit"
               className="w-full rounded-lg shadow-lg"
             />
@@ -69,7 +72,7 @@ const Single = () => {
           </div>
           <div>
             <img
-              src="../../public/single4.jpg"
+              src={img4}
               alt="Unloading the Container"
               className="w-full rounded-lg shadow-lg"
             />
