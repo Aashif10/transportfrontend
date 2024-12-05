@@ -1,5 +1,5 @@
 import React from "react";
-
+import img1 from '../../public/single.jpg'
 const Single = () => {
   return (
     <div className="bg-gray-100 py-16">
@@ -21,7 +21,7 @@ const Single = () => {
         <div className="flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0">
           <div className="md:w-1/2">
             <img
-              src="../../public/single.jpg" // Replace with your own image URL
+              src={img1} // Replace with your own image URL
               alt="Single Container Service"
               className="w-full rounded-lg shadow-lg"
             />
