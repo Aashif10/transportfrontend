@@ -1,5 +1,7 @@
 import React from "react";
-
+import img1 from "../../public/mover.jpg"
+import img2 from "../../public/parking.jpg"
+import img3 from "../../public/parker.jpg"
 const MoversAndPackers = () => {
   return (
     <div className="container mx-auto px-4 py-8">
@@ -18,7 +20,7 @@ const MoversAndPackers = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <img
-            src="../../public/mover.jpg" // Replace with your image
+            src={img1} // Replace with your image
             alt="Packing"
             className="w-full h-64 object-cover"
           />
@@ -35,7 +37,7 @@ const MoversAndPackers = () => {
 
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <img
-            src="../../public/parking.jpg" // Replace with your image
+            src={img2} // Replace with your image
             alt="Moving"
             className="w-full h-64 object-cover"
           />
@@ -52,7 +54,7 @@ const MoversAndPackers = () => {
 
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <img
-            src="../../public/parker.jpg" // Replace with your image
+            src={img3} // Replace with your image
             alt="Unpacking"
             className="w-full h-64 object-cover"
           />
