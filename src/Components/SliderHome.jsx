@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import front from "../../public/front2.jpg"
+import front from "../../public/front2.jpg";
 import { Link, useNavigate } from "react-router-dom";
-
 
 const SliderHome = () => {
   const Navigate = useNavigate();
@@ -11,11 +10,16 @@ const SliderHome = () => {
     message
   )}`;
 
-  return <div>
-      <div className="bg-cover bg-center bg-no-repeat h-screen flex flex-col justify-center items-center relative" style={{ // backgroundImage: `url('https://c1.wallpaperflare.com/preview/84/73/279/truck-lorry-transportation-logistics.jpg')`
-          backgroundImage: `url(${front})` }}>
+  return (
+    <div>
+      <div
+        className="bg-cover bg-center bg-no-repeat h-screen flex flex-col justify-center items-center relative"
+        style={{
+          // backgroundImage: `url('https://c1.wallpaperflare.com/preview/84/73/279/truck-lorry-transportation-logistics.jpg')`
+          backgroundImage: `url(${front})`
+        }}
+      >
         {/* Logo */}
-       
 
         {/* Content */}
         <div className="bg-black bg-opacity-50 text-white p-6 rounded text-center">
@@ -26,7 +30,10 @@ const SliderHome = () => {
             Efficient and comfortable transportation services for all
           </p>
           <Link to="reservation">
-            <button className="bg-black  text-white hover:text-black px-6 py-2 rounded hover:bg-orange-500 transition" onClick={()=>Navigate("/reservation")}>
+            <button
+              className="bg-black  text-white hover:text-black px-6 py-2 rounded hover:bg-orange-500 transition"
+              onClick={() => Navigate("/reservation")}
+            >
               Book Your Transportation Service
             </button>
           </Link>
@@ -34,12 +41,20 @@ const SliderHome = () => {
 
         {/* WhatsApp Button */}
         <div className="fixed bottom-7 right-6 z-50">
-          <button className="bg-green-500 text-white rounded-full p-3 shadow-lg z-10 hover:bg-green-600 transition" onClick={() => window.open(whatsappURL, "_blank")}>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="h-8 w-8" />
+          <button
+            className="bg-green-500 text-white rounded-full p-3 shadow-lg z-10 hover:bg-green-600 transition"
+            onClick={() => window.open(whatsappURL, "_blank")}
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+              alt="WhatsApp"
+              className="h-8 w-8"
+            />
           </button>
         </div>
       </div>
-    </div>;
+    </div>
+  );
 };
 
 export default SliderHome;

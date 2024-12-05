@@ -1,29 +1,31 @@
 import React from 'react'
-import About from '../pages/About'
-import Qualities from '../pages/Qualities'
-import WhoAreWe from '../pages/WhoAreWe'
-import Team from '../pages/Team'
-import Reservation from '../pages/Reservation'
-import SliderHome from '../pages/SliderHome'
-import Menu from '../pages/Menu'
-import Footer1 from '../pages/Footer1'
-import Services from '../pages/Services'
+
 import Navbar1 from './Navbar1'
-import Single from '../pages/Single'
-import Bike from '../pages/Bike'
-import MoversAndPackers from '../pages/MoversAndPackers'
-import CarRelocation from '../pages/CarRelocation'
+import About from './About'
+import SliderHome from './SliderHome'
+import Bike from './Bike'
+import Blog from './Blog'
+import CarRelocation from './CarRelocation'
+import Footer1 from './Footer1'
+import Menu from './Menu'
+import MoversAndPackers from './MoversAndPackers'
+import Qualities from './Qualities'
+import Reservation from './Reservation'
+import Services from './Services'
+import Single from './Single'
+import Team from './Team'
+import WhoAreWe from './WhoAreWe'
 
 const Home = () => {
   return (
     <>
       <Navbar1></Navbar1>
-      {/* <Navbar></Navbar> */}
       <SliderHome></SliderHome>
       <Menu></Menu>
       <Qualities></Qualities>
       <Services></Services>
       <About></About>
+      <Blog></Blog>
       <Single></Single>
       <Bike></Bike>
       <MoversAndPackers></MoversAndPackers>
