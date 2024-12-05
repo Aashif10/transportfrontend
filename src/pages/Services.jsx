@@ -4,7 +4,11 @@ import { HiArrowRight } from "react-icons/hi";
 import Navbar1 from "../Components/Navbar1";
 import { Link } from "react-router-dom";
 
+
 const Services = () => {
+  const path = window.location.pathname
+  console.log(path);
+  
   const services = [
     {
       id: 1,
@@ -36,8 +40,8 @@ const Services = () => {
     },
   ];
 
-  return (
-    <div>
+  return <div>
+      {path === "/services" && <Navbar1 />}
       <section className="py-16 mt-10 bg-gray-100">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Heading */}
@@ -46,28 +50,34 @@ const Services = () => {
               Our Moving Services
             </h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-              We are a professional moving company created to move more than just
-              your boxes. We’ll do it with pleasure.
+              We are a professional moving company created to move more than
+              just your boxes. We’ll do it with pleasure.
             </p>
           </div>
 
           {/* Services Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map((service) => (
+            {services.map(service =>
               <div
                 key={service.id}
                 className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow duration-300"
               >
                 {/* Icon */}
                 <div className="mb-4">
-                  <Link to={service.link}>{service.icon}</Link>
+                  <Link to={service.link}>
+                    {service.icon}
+                  </Link>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-lg font-semibold text-gray-800">{service.title}</h3>
+                <h3 className="text-lg font-semibold text-gray-800">
+                  {service.title}
+                </h3>
 
                 {/* Description */}
-                <p className="text-gray-600 mt-2">{service.description}</p>
+                <p className="text-gray-600 mt-2">
+                  {service.description}
+                </p>
 
                 {/* Arrow Button */}
                 <div className="mt-4 flex justify-center">
@@ -81,12 +91,11 @@ const Services = () => {
                   </Link>
                 </div>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
 
 export default Services;
