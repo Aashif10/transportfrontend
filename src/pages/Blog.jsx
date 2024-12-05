@@ -1,9 +1,16 @@
 import React from "react";
+import img1 from "../../public/blog1.jpg"
+import img2 from "../../public/blog2.avif"
+import img3 from "../../public/blog3.jpg"
+import img4 from "../../public/blog4.jpg"
+import img5 from "../../public/blog5.jpg"
+import img6 from "../../public/blog6.jpg"
+import img7 from "../../public/blog7.jpg"
 
 const Blog = () => {
   const featuredPost = {
     title: "The Role of Transportation in Smart Cities",
-    image: "../../public/blog1.jpg", // Replace with your image URL
+    image:{img1}, // Replace with your image URL
     description:
       "Smart cities rely on efficient and innovative transportation systems to improve connectivity, reduce pollution, and enhance the quality of life."
   };
@@ -12,42 +19,42 @@ const Blog = () => {
     {
       id: 1,
       title: "Exploring Modern Public Transport Systems",
-      image: "../../public/blog2.avif",
+      image: {img2},
       description:
         "Public transport systems around the world are evolving with innovations in technology and sustainability."
     },
     {
       id: 2,
       title: "The Future of Electric Vehicles",
-      image: "../../public/blog3.jpg",
+      image:{img3},
       description:
         "Electric vehicles are revolutionizing the way we think about personal and public transportation."
     },
     {
       id: 3,
       title: "High-Speed Rail: Connecting Cities Faster",
-      image: "../../public/blog4.jpg",
+      image: {img4},
       description:
         "High-speed rail systems are transforming long-distance travel with speed and comfort."
     },
     {
       id: 4,
       title: "Autonomous Vehicles: A Driverless Future",
-      image: "../../public/blog5.jpg",
+      image:{img5},
       description:
         "Autonomous vehicles are set to redefine how we commute, enhancing safety and efficiency on the roads."
     },
     {
       id: 5,
       title: "The Impact of Air Travel on Climate Change",
-      image: "../../public/blog6.jpg",
+      image: {img6},
       description:
         "Air travel has a significant environmental impact. Learn how the industry is adapting with greener technologies."
     },
     {
       id: 6,
       title: "Cycling and Walkability in Urban Spaces",
-      image: "../../public/blog7.jpg",
+      image:{img7},
       description:
         "Promoting cycling and walkable urban areas can reduce congestion and foster healthier lifestyles."
     }
