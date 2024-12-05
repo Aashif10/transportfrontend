@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { HiOutlineArrowRight } from "react-icons/hi";
+import Navbar1 from "../Components/Navbar1";
 
 const About = () => {
   const path = window.location.pathname;
