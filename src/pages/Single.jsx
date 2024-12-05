@@ -4,10 +4,8 @@ import img2 from "../../public/single1.webp"
 import img3 from "../../public/single2.webp"
 import img4 from '../../public/single4.jpg'
 const Single = () => {
-  const path = window.location.pathname;
 
   return <div>
-      {path === "/single" && <Navbar1 />}
 
       <div className="bg-gray-100 py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
