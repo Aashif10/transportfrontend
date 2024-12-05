@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import front from "../../public/front2.jpg";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const SliderHome = () => {
-  const Navigate = useNavigate();
   const phoneNumber = "+918527669072";
   const message = "Hello, I would like to inquiry about your services!";
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
@@ -29,10 +28,9 @@ const SliderHome = () => {
           <p className="text-3xl mb-6">
             Efficient and comfortable transportation services for all
           </p>
-          <Link to="reservation">
+          <Link to="/contact">
             <button
-              className="bg-black  text-white hover:text-black px-6 py-2 rounded hover:bg-orange-500 transition"
-              onClick={() => Navigate("/reservation")}
+              className="bg-white  text-black hover:text-black px-6 py-2 rounded hover:bg-orange-500 transition"
             >
               Book Your Transportation Service
             </button>

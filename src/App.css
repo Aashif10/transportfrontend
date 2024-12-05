@@ -858,7 +858,7 @@ footer .container .banner .right {
 .reservation {
   display: flex;
   min-height: 75vh;
-  padding: 30px 20px;
+  margin-bottom: 40px;
   justify-content: center;
   align-items: center;
   background: url(/reserve.svg);
