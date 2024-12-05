@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 import { HiOutlineArrowRight } from "react-icons/hi";
 
 const About = () => {
+  const path = window.location.pathname;
   return (
     <>
+      {path === "/about" && <Navbar1 />}
+      
       <section className="about" id="about">
         <div className="container">
           <div className="banner">
