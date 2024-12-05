@@ -4,14 +4,14 @@ import Home from "./Components/Home";
 import Success from "./Components/Success";
 import NotFound from "./Components/NotFound";
   import { ToastContainer } from "react-toastify";
-import Reservation from "./pages/Reservation";
-import Services from "./pages/Services";
-import About from "./pages/About";
-import Single from "./pages/Single";
-import MoversAndPackers from "./pages/MoversAndPackers";
-import CarRelocation from "./pages/CarRelocation";
-import Bike from "./pages/Bike";
-import Blog from "./pages/Blog";
+import Blogs from "./Components/Blogs";
+import Bike from "./Components/Bike";
+import CarRelocation from "./Components/CarRelocation";
+import MoversAndPackers from "./Components/MoversAndPackers";
+import Single from "./Components/Single";
+import About from "./Components/About";
+import Services from "./Components/Services";
+import Reservation from "./Components/Reservation";
 
 const App = () => {
   return (
@@ -27,7 +27,7 @@ const App = () => {
         <Route path="/mover" element={<MoversAndPackers></MoversAndPackers>}></Route>
         <Route path="/carRelocation" element={<CarRelocation></CarRelocation>}></Route>
         <Route path="/bike" element={<Bike></Bike>}></Route>
-        <Route path="/blog" element={<Blog></Blog>}></Route>
+        <Route path="/blog" element={<Blogs></Blogs>}></Route>
       </Routes>
       <ToastContainer
 position="top-right"

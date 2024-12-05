@@ -3,8 +3,12 @@ import img1 from "../../public/single.jpg";
 import img2 from "../../public/single1.webp";
 import img3 from "../../public/single2.webp";
 import img4 from "../../public/single4.jpg";
+import Navbar1 from "./Navbar1";
 const Single = () => {
+  const path = window.location.pathname;
   return (
+    <>
+      {path==="/single"&& <Navbar1></Navbar1>}
     <div className="bg-gray-100 py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
@@ -101,7 +105,8 @@ const Single = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      </>
   );
 };
 

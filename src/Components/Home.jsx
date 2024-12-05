@@ -4,7 +4,6 @@ import Navbar1 from './Navbar1'
 import About from './About'
 import SliderHome from './SliderHome'
 import Bike from './Bike'
-import Blog from './Blog'
 import CarRelocation from './CarRelocation'
 import Footer1 from './Footer1'
 import Menu from './Menu'
@@ -15,6 +14,7 @@ import Services from './Services'
 import Single from './Single'
 import Team from './Team'
 import WhoAreWe from './WhoAreWe'
+import Blogs from './Blogs'
 
 const Home = () => {
   return (
@@ -25,7 +25,7 @@ const Home = () => {
       <Qualities></Qualities>
       <Services></Services>
       <About></About>
-      <Blog></Blog>
+      <Blogs></Blogs>
       <Single></Single>
       <Bike></Bike>
       <MoversAndPackers></MoversAndPackers>

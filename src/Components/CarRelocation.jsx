@@ -2,8 +2,12 @@ import React from "react";
 import img1 from "../../public/car1.jpg";
 import img2 from "../../public/car2.jpg";
 import img3 from "../../public/car3.avif";
+import Navbar1 from "./Navbar1";
 const CarRelocation = () => {
+  const path = window.location.pathname;
   return (
+    <>
+      {path==="/carRelocation" && <Navbar1/>}
     <div className="bg-gray-50 py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
@@ -111,7 +115,8 @@ const CarRelocation = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      </>
   );
 };
 

@@ -2,8 +2,12 @@ import React from "react";
 import img1 from "../../public/mover.jpg";
 import img2 from "../../public/parking.jpg";
 import img3 from "../../public/parker.jpg";
+import Navbar1 from "./Navbar1";
 const MoversAndPackers = () => {
+  const path = window.location.pathname;
   return (
+  <>
+    {path==="/mover" && <Navbar1></Navbar1>}
     <div className="container mx-auto px-4 py-8">
       {/* Section Header */}
       <div className="text-center mb-12">
@@ -107,7 +111,8 @@ const MoversAndPackers = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      </>
   );
 };
 

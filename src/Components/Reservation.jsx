@@ -14,169 +14,129 @@ const Reservation = () => {
   const form = useRef();
   const navigate = useNavigate();
 
-  const [isSuccess, setIsSuccess] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false); // State to track form submission success
 
-  const handleReservation = (e) => {
+  const handleReservation = e => {
     e.preventDefault();
     emailjs
       .sendForm("service_spd0cja", "template_f9bshyo", form.current, {
-        publicKey: "5k8eHRGbcejoAsdY-",
+        publicKey: "5k8eHRGbcejoAsdY-"
       })
       .then(
         () => {
           toast.success("Book Your Details successfully!");
-          setIsSuccess(true);
+          setIsSuccess(true); // Set success state to true
           setTimeout(() => {
-            navigate("/success");
+            navigate("/success"); // Redirect to success page after 2 seconds
           }, 2000);
         },
-        (error) => {
+        error => {
           toast.error("Wrong Data filled Try Again!");
         }
       );
   };
 
-  return (
-    <>
-      {path === "/contact" && <Navbar1 />}
+  return(
+  <>
+     {path==="/contact" && <Navbar1/>}
 
-      <section className="reservation px-4 py-8" id="reservation">
-        <div className="container mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            {/* Left Section */}
-            <div>
-              <h1 className="text-gray-300 font-semibold text-lg md:text-xl mt-0">
-                Moving Services
-              </h1>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-orange-500 p-2 mt-0">
-                Full-Service
-              </h1>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-orange-500 p-2 mt-0">
-                Moving Company
-              </h1>
-              <p className="text-base md:text-xl mt-0">
-                We help people move their vehicles from one place to another
-                place.
-              </p>
-              <p className="text-base md:text-xl mt-0">
-                We provide all-inclusive services for transfer like bike, car,
-                and other vehicles.
-              </p>
-              <p className="text-base md:text-xl mt-0">
-                No matter where you are going across the country, we have got
-                you covered. We move people every day, so we are fast, efficient
-                and careful.
-              </p>
-              <div className="flex items-center mt-6">
-                <button className="text-sm md:text-lg p-3 bg-black hover:bg-orange-500 transition rounded-full text-white">
-                  Discover More
-                </button>
-                <div className="flex items-center ml-4">
-                  <LuPhoneCall className="text-orange-500 text-2xl" />
-                  <span className="text-orange-500 text-xl ml-2">
-                    9953253431
-                  </span>
-                </div>
-              </div>
-            </div>
+  <section className="reservation padding-4" id="reservation">
 
-            {/* Right Section */}
-            <div className="reservation_form_box bg-white p-6 rounded-lg shadow-lg">
-              <h1 className="text-xl font-bold mt-0">BOOKING DETAILS</h1>
-              <p className="text-gray-600 mb-4 mt-0">
-                For Further Questions, Please Call
-              </p>
-              <form ref={form} onSubmit={handleReservation} autoComplete="off">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <input
-                    type="text"
-                    placeholder="First Name"
-                    name="from_firstname"
-                    className="p-2 border rounded"
-                    required
-                  />
-                  <input
-                    type="text"
-                    placeholder="Last Name"
-                    name="from_lastname"
-                    className="p-2 border rounded"
-                    required
-                  />
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="p-2 border rounded"
-                    name="from_email"
-                    required
-                  />
-                  <input
-                    type="number"
-                    placeholder="Phone"
-                    className="p-2 border rounded"
-                    name="from_number"
-                    required
-                  />
-                </div>
-                <div className="mt-4">
-                  <input
-                    type="date"
-                    className="p-2 border rounded w-full"
-                    placeholder="Date"
-                    name="from_date"
-                    required
-                  />
-                </div>
-                <div className="mt-4">
-                  <select
-                    name="from_time"
-                    className="p-2 border outline-none rounded w-full"
-                    required
-                  >
-                    <option value="Select Vehicles" disabled selected>
-                      Select vehicles
-                    </option>
-                    <option value="None">None</option>
-                    <option value="Car Relocation">Car Relocation</option>
-                    <option value="bike Relocation">Bike Relocation</option>
-                    <option value="Single Container Service">
-                      Single Container service
-                    </option>
-                    <option value="Movers & Parkers">Mover & parker</option>
-                  </select>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 items-center">
-                  <input
-                    type="text"
-                    placeholder="From"
-                    className="p-2 border rounded"
-                    name="from_source"
-                    required
-                  />
-                  <FaArrowRightArrowLeft className="text-xl text-gray-600 mx-auto" />
-                  <input
-                    type="text"
-                    placeholder="To"
-                    className="p-2 border rounded"
-                    name="from_destination"
-                    required
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="w-full mt-6 p-3 bg-orange-500 hover:bg-orange-600 text-white rounded-full text-lg"
-                >
-                  BOOK NOW{" "}
-                  <HiOutlineArrowNarrowRight className="inline ml-2" />
-                </button>
-              </form>
-            </div>
+      <div className="container">
+        {/* Home Button */}
+        {/* <div className="home-button-container mt-10">
+          <button id="home-button" className="px-4 py-2 text-black  rounded-lg shadow-lg flex items-center justify-center gap-2 transition-all hover:bg-orange-600 sm:text-sm md:text-lg lg:text-xl" onClick={() => navigate("/")}>
+            HOME <span>
+              <HiOutlineArrowNarrowRight />
+            </span>
+          </button>
+        </div> */}
+
+        <div className=" ml-12">
+          <h1 className="text-gray-300 mt-4 ml-2 font-semibold">
+            Moving Services
+          </h1>
+          <h1 className="text-6xl font-bold text-orange-500 p-2">
+            Full-Service
+          </h1>
+          <h1 className="text-6xl font-bold text-orange-500 p-2">
+            Moving Company
+          </h1>
+          <p className="mt-2 text-2xl">
+            We help to people to move their vehicles from one place to another
+            place.
+          </p>
+          <span className="mt-2 text-2xl">
+            We provide all-inclusive services for transper like bike,Car and
+            other vehicles.
+          </span>
+          <p className="mt-4 text-2xl ">
+            No matter where you are going across the country, We have got you
+          </p>
+          <span className="mt-2 text-2xl">
+            covered. we move for people every day,so we are fast,efficient and
+            careful
+          </span>
+          <div className="flex mt-4 ">
+            <button className="text-xl p-3 mt-4 bg-black transition hover:bg-orange-500 rounded-full text-white">
+              Discover More
+            </button>
+            <h2 className="text-4xl text-orange-500 mt-7 ml-2">
+              <LuPhoneCall />
+            </h2>
+            <h2 className="text-2xl text-orange-500 mt-7 ml-2">
+              9953253431
+            </h2>
           </div>
         </div>
-      </section>
-    </>
-  );
+        <div className="banner">
+          <div className="reservation_form_box mr-4">
+            <h1>BOOKING DETAILS</h1>
+            <p>For Further Questions, Please Call</p>
+            <form ref={form} onSubmit={handleReservation} autoComplete="off">
+              <div>
+                <input type="text" placeholder="First Name" name="from_firstname" required />
+                <input type="text" placeholder="Last Name" name="from_lastname" required />
+              </div>
+              <div>
+                <input type="email" placeholder="Email" className="email_tag" name="from_email" required />
+                <input type="number" placeholder="Phone" name="from_number" required />
+              </div>
+              <div>
+                <input type="date" placeholder="Date" name="from_date" required />
+                <select name="from_time" id="options" required>
+                  <option value="" disabled selected>
+                    Select vehicles
+                  </option>
+                  <option value="None">None</option>
+                  <option value="Car Relocation">Car Relocation</option>
+                  <option value="bike Relocation">Bike Relocation</option>
+                  <option value="Single Container Service">
+                    Single Container service
+                  </option>
+                  <option value="Movers & Parkers">Mover & parker</option>
+                </select>
+              </div>
+              <div className="flex items-center space-x-4">
+                <input type="text" placeholder="From" className="border p-2 w-full" name="from_source" required />
+                <span className="text-black font-medium mt-2">
+                  <FaArrowRightArrowLeft />
+                </span>
+                <input type="text" placeholder="To" className="border p-2 w-full" name="from_destination" required />
+              </div>
+
+              <button id="button" type="submit">
+                BOOK NOW <span>
+                  <HiOutlineArrowNarrowRight />
+                </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>;
+    </>)
 };
 
 export default Reservation;
+
