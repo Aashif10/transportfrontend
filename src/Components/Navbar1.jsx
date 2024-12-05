@@ -34,7 +34,7 @@ const Navbar1 = () => {
       {/* Nav Links (Desktop) */}
       <div className="hidden md:flex space-x-8 text-lg font-medium">
         <Link to="/" className="hover:text-orange-500 no-underline">
-          Hhome
+          Home
         </Link>
         <Link to="/services" className="hover:text-orange-500 no-underline">
           Services
