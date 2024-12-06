@@ -1,6 +1,6 @@
 import React from "react";
 import img1 from "../../public/car1.jpg";
-import img2 from "../../public/car2.jpg";
+import img2 from "../../public/download (1).jpeg";
 import img3 from "../../public/car3.avif";
 import Navbar1 from "./Navbar1";
 const CarRelocation = () => {
@@ -97,7 +97,7 @@ const CarRelocation = () => {
 
         {/* Call to Action Section */}
         <div className="mt-16 text-center">
-          <h2 className="text-2xl font-semibold text-gray-800">
+          <h2 className="text-2xl p-0 font-semibold text-gray-800">
             Get Started with Your Car Relocation
           </h2>
           <p className="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
@@ -108,7 +108,7 @@ const CarRelocation = () => {
           <div className="mt-6">
             <a
               href="#"
-              className="px-8 py-3 bg-orange-500 text-white text-lg rounded-lg hover:bg-orange-600 transition duration-300"
+              className="px-8 py-0 bg-orange-500 text-white text-lg rounded-lg hover:bg-orange-600 transition duration-300"
             >
               Request a Quote
             </a>

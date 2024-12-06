@@ -97,28 +97,24 @@
         ],
         "team": [
             {
-                "id": 1,
-                "image": "./arifF.jpeg",
-                "name": "Md Arif",
-                "designation": "Founder"
+                "id": 1
+            
             },
             {
                 "id": 2,
-                "image": "./men5.avif",
+                "image": "./arifF.jpeg",
                 "name": "WADE WARREN",
-                "designation": "Co Founder"
+                "designation": "Founder"
             },
             {
                 "id": 3,
                 "image": "./men3.avif",
-                "name": "JHON DOE",
-                "designation": "Manager"
+                "name": "Taseen Ahmad",
+                "designation": "Co-Founder"
             },
             {
-                "id": 4,
-                "image": "./men4.jpg",
-                "name": "ALEX COAL",
-                "designation": "Accountant"
+                "id": 4
+               
             }
         ],
         "testimonials": [
