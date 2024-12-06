@@ -67,6 +67,7 @@ const CarRelocation = () => {
                 ref={videoRef}
                 width="500"
                 muted
+                loop
                 autoPlay
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
