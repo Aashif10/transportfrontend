@@ -108,8 +108,8 @@ const Reservation = () => {
                   <option value="" disabled selected>
                     Select vehicles
                   </option>
-                  <option value="None">None</option>
-                  <option value="Car Relocation">Car Relocation</option>
+                  <option value="None" >None</option>
+                  <option value="Car Relocation" >Car Relocation</option>
                   <option value="bike Relocation">Bike Relocation</option>
                   <option value="Single Container Service">
                     Single Container service

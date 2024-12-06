@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FiPhoneCall, FiMenu, FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
-
+import logo from "../../public/AR.png"
 const Navbar1 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -10,13 +10,14 @@ const Navbar1 = () => {
   };
 
   return (
-    <nav className="flex items-center z-10 justify-between px-6 py-4 bg-white w-full ">
+    <nav className="flex items-center z-10 justify-between px-4 py-4 bg-white w-full ">
       {/* Logo */}
       <div className="flex items-center">
+        <img src={logo} className="w-12 h-12" alt="" />
         <h1 className="text-2xl font-bold">
-          <span className="text-black">AR</span>
-          <span className="text-red-500">AUTO</span>
-          <span className="text-black">TRANSPORTS</span>
+          <span className="text-black"></span>
+          <span className="text-red-600">AUTO</span>
+          <span className="text-black">TRANSPORT</span>
         </h1>
       </div>
 
