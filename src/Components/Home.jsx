@@ -19,7 +19,7 @@ import Blogs from './Blogs'
 const Home = () => {
   return (
     <>
-      <Navbar1></Navbar1>
+      {/* <Navbar1></Navbar1> */}
       <SliderHome></SliderHome>
       <Menu></Menu>
       <Qualities></Qualities>

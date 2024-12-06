@@ -1138,7 +1138,7 @@ footer .container .banner .right {
 transition: 2s ;
 }
 .transition:hover{
-  background-color: orange;
+  /* background-color: orange; */
   color: black;
 }
 #options{
