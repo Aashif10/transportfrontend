@@ -40,26 +40,17 @@ const Reservation = () => {
   <>
      {path==="/contact" && <Navbar1/>}
 
-  <section className="reservation padding-4" id="reservation">
+  <section className="reservation padding-4 " id="reservation">
 
-      <div className="container">
-        {/* Home Button */}
-        {/* <div className="home-button-container mt-10">
-          <button id="home-button" className="px-4 py-2 text-black  rounded-lg shadow-lg flex items-center justify-center gap-2 transition-all hover:bg-orange-600 sm:text-sm md:text-lg lg:text-xl" onClick={() => navigate("/")}>
-            HOME <span>
-              <HiOutlineArrowNarrowRight />
-            </span>
-          </button>
-        </div> */}
-
+      <div className="container ml-6 mt-12">
         <div className=" ml-12">
-          <h1 className="text-gray-300 mt-4 ml-2 font-semibold">
+          <h1 className="text-gray-300 mt-4 ml-2 font-semibold p-4">
             Moving Services
           </h1>
-          <h1 className="text-6xl font-bold text-orange-500 p-2">
+          <h1 className="text-6xl font-bold text-orange-500 p-4">
             Full-Service
           </h1>
-          <h1 className="text-6xl font-bold text-orange-500 p-2">
+          <h1 className="text-6xl font-bold text-orange-500 p-4">
             Moving Company
           </h1>
           <p className="mt-2 text-2xl">

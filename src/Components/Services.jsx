@@ -46,7 +46,7 @@ const Services = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Heading */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-800">
+            <h2 className="text-4xl font-bold text-gray-800 p-2">
               Our Moving Services
             </h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">

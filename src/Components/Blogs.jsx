@@ -11,7 +11,7 @@ const Blogs = () => {
     return (
         <>
             {path==="/blog" && <Navbar1/>}
-    <div className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 mt-4 p-6">
       {/* Heading Section */}
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-800">
@@ -104,28 +104,28 @@ const Blogs = () => {
               Dive into how technology, from AI to IoT, is reshaping the
               transport sector for better efficiency and safety.
             </p>
-            <a href="#" className="text-orange-500 font-medium hover:underline">
+            <button href="#" className="text-orange-500 font-medium hover:underline">
               Read More
-            </a>
+            </button>
           </div>
         </div>
       </div>
 
       {/* Call to Action */}
       <div className="mt-16 text-center">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4 p-2">
           Stay Updated with Our Blog
         </h2>
         <p className="text-lg text-gray-600 mb-6">
           Subscribe to our blog and never miss an update on the latest trends
           and insights in the transport industry.
         </p>
-        <a
+        <button
           href="#"
           className="bg-orange-500 text-white text-lg px-6 py-3 rounded-lg hover:bg-orange-600 transition duration-300"
         >
           Subscribe Now
-        </a>
+        </button>
       </div>
             </div>
             </>

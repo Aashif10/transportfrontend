@@ -24,7 +24,7 @@ const CarRelocation = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header Section */}
           <div className="text-center mb-16">
-            <h1 className="text-4xl font-bold text-gray-800">
+            <h1 className="text-4xl font-bold text-gray-800 p-2">
               Car Relocation Service
             </h1>
             <p className="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
@@ -115,7 +115,7 @@ const CarRelocation = () => {
 
           {/* Call to Action Section */}
           <div className="mt-16 text-center">
-            <h2 className="text-2xl p-0 font-semibold text-gray-800">
+            <h2 className="text-2xl p-0 font-semibold text-gray-800 p-2">
               Get Started with Your Car Relocation
             </h2>
             <p className="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">

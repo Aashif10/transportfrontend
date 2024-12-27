@@ -1,8 +1,6 @@
 import React from 'react'
-
-import Navbar1 from './Navbar1'
 import About from './About'
-import SliderHome from './SliderHome'
+// import SliderHome from './SliderHome'
 import Bike from './Bike'
 import CarRelocation from './CarRelocation'
 import Footer1 from './Footer1'
@@ -15,12 +13,12 @@ import Single from './Single'
 import Team from './Team'
 import WhoAreWe from './WhoAreWe'
 import Blogs from './Blogs'
-
+import HomeSlide from  "./HomeSlide"
 const Home = () => {
   return (
     <>
-      {/* <Navbar1></Navbar1> */}
-      <SliderHome></SliderHome>
+         <HomeSlide></HomeSlide>
+      {/* <SliderHome></SliderHome> */}
       <Menu></Menu>
       <Qualities></Qualities>
       <Services></Services>

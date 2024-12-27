@@ -10,10 +10,10 @@ const Bike = () => {
   return (
     <>
       {path==="/bike" && <Navbar1/>}
-    <div className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 mt-4">
       {/* Heading Section */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-800">
+        <h1 className="text-4xl font-bold text-gray-800 p-2">
           Bike Relocation Service
         </h1>
         <p className="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
@@ -89,16 +89,16 @@ const Bike = () => {
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">
           Ready to Relocate Your Bike?
         </h2>
-        <p className="text-lg text-gray-600 mb-6">
+        <p className="text-lg text-gray-600 mb-6 ">
           Contact us today for a free quote and experience seamless bike
           relocation.
         </p>
-        <a
+        <button
           href="#"
-          className="bg-orange-500 text-white text-lg px-6 py-3 rounded-lg hover:bg-orange-600 shadow-lg transition duration-300"
+          className="bg-orange-500 text-white text-lg px-6 py-2 rounded-lg hover:bg-orange-600 shadow-lg transition duration-300 p-4"
         >
           Get a Free Quote
-        </a>
+        </button>
       </div>
       </div>
       </>

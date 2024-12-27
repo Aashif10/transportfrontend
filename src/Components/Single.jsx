@@ -13,7 +13,7 @@ const Single = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-800">
+          <h1 className="text-4xl font-bold text-gray-800 p-2">
             Single Container Truck Service
           </h1>
           <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
@@ -96,12 +96,12 @@ const Single = () => {
             get your belongings delivered safely and on time!
           </p>
           <div className="mt-6">
-            <a
+            <button
               href="#"
-              className="px-8 py-3 bg-orange-500 text-white text-lg rounded-lg hover:bg-orange-600 transition duration-300"
+              className="px-8 py-3 bg-orange-500 text-white text-lg rounded-lg hover:bg-orange-600 transition duration-300 p-2"
             >
               Get a Quote
-            </a>
+            </button>
           </div>
         </div>
       </div>

@@ -8,10 +8,10 @@ const MoversAndPackers = () => {
   return (
   <>
     {path==="/mover" && <Navbar1></Navbar1>}
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 mt-6">
       {/* Section Header */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-800">
+        <h1 className="text-4xl font-bold text-gray-800 p-2">
           Movers & Packers Service
         </h1>
         <p className="text-lg text-gray-600 mt-4">
