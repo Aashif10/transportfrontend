@@ -116,25 +116,25 @@ function HomeSlide() {
           current === index &&
           <div
             key={slide.image}
-            className="slide flex justify-center items-center w-full h-full relative"
+            className="slide flex justify-center text-center items-center w-full h-full relative"
           >
             {/* Image */}
             <img
-              className="w-full h-full object-cover"
+              className="w-[1360px] h-full "
               src={slide.image}
               alt={`Slide ${index + 1}`}
             />
 
             {/* Overlay Content */}
-            <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-white text-center px-4">
-              <h1 className="text-3xl md:text-5xl font-bold p-3">
+            <div className="absolute   inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-white text-center px-4">
+              <h1 className="text-3xl md:text-5xl font-bold p-3 mb-4">
                 {slide.quote}
               </h1>
-              <p className="text-xl md:text-xl mt-2">
+              <p className="text-xl md:text-xl mt-0 mb-4">
                 Efficient and comfortable transportation services for all.
               </p>
                 <Link to="/contact">
-                   <button className="mt-4 px-6 py-3 bg-orange-500 hover:bg-orange-400 text-white  rounded-lg">
+                   <button className="mt-4 px-6 py-3 mb-16 bg-orange-500 hover:bg-orange-400 text-white  rounded-lg">
                 Book Your Tranportation Services
               </button>
              </Link>

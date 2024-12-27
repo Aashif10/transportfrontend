@@ -42,7 +42,7 @@ const Reservation = () => {
 
   <section className="reservation padding-4 " id="reservation">
 
-      <div className="container ml-6 mt-12">
+      <div className="container ml-6 mt-2">
         <div className=" ml-12">
           <h1 className="text-gray-300 mt-4 ml-2 font-semibold p-4">
             Moving Services
