@@ -12,7 +12,7 @@ const Navbar1 = () => {
     setIsMenuOpen(false); // Close the menu when a link is clicked
   };
 
-  return <nav className="flex items-center justify-between px-4 py-2 bg-white w-full  fixed z-50">
+  return <nav className="flex items-center  z-10 justify-between px-2 py-0 bg-white w-full ">
       {/* Logo */}
       <div className="flex items-center">
         <img src={logo} className="w-12 h-12 mr-2" alt="Logo" />
@@ -22,7 +22,6 @@ const Navbar1 = () => {
           <span className="text-black">TRANSPORT</span>
         </h1>
       </div>
-
       {/* Hamburger Menu for Small Screens */}
       <div className="md:hidden">
         <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-2xl text-orange-500 focus:outline-none">
