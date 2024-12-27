@@ -1,46 +1,56 @@
 import React, { useState, useEffect } from "react";
 import Navbar1 from "./Navbar1";
 import { Link } from "react-router-dom";
+import img1 from "../../public/img0.jpeg"
+import img2 from "../../public/Premium Photo _ Truck on highway road with red container, transportation concept_,import,export logistic industrial Transporting.jpeg"
+import img3 from "../../public/img2.jpeg"
+import img0 from "../../public/photo.jpeg"
+import img4 from "../../public/img3.jpeg"
+import img5 from "../../public/img5.jpeg"
+import img6 from "../../public/img7.jpeg"
+import img7 from "../../public/img8.jpeg"
+import img8 from "../../public/urdu.jpeg"
+import img9 from "../../public/Auto hauler.jpeg"
 
 const slides = [
   {
-    image: "../../public/img0.jpeg",
+    image: img1,
     quote: "Fast, Reliable, and Efficient Transportation Services."
   },
   {
-    image: "../../public/Premium Photo _ Truck on highway road with red container, transportation concept_,import,export logistic industrial Transporting.jpeg",
+    image: img2,
     quote: "Safety and Comfort Combined for Your Journey."
   },
   {
-    image: "../../public/img2.jpeg",
+    image: img3,
     quote: "Every Mile with Excellence, Just for You."
   },
   {
-    image: "../../public/img3.jpeg",
+    image: img4,
     quote: "Luxury Meets Mobility – Travel in Style."
   },
   {
-    image: "../../public/img4.jpeg",
+    image: img0,
     quote: "Making Your Journey Effortless and Memorable."
   },
   {
-    image: "../../public/img5.jpeg",
+    image: img5,
     quote: "Every vehicle carries dreams, destinations, and stories"
   },
   {
-    image: "../../public/img7.jpeg",
+    image:img6,
     quote: "Travel far, explore new horizons"
   },
   {
-    image: "../../public/img8.jpeg",
+    image: img7,
     quote: "ransport connects us, beyond boundaries"
   },
   {
-    image: "../../public/urdu.jpeg",
+    image: img8,
     quote: "Every journey starts with a single step"
   },
    {
-    image: "../../public/Auto hauler.jpeg",
+    image: img9,
     quote: "Connections made through transport, journeys unite people"
   }
 ];
