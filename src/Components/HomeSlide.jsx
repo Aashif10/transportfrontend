@@ -120,7 +120,7 @@ function HomeSlide() {
           >
             {/* Image */}
             <img
-              className="w-[1360px] h-full "
+              className="w-full h-full "
               src={slide.image}
               alt={`Slide ${index + 1}`}
             />
