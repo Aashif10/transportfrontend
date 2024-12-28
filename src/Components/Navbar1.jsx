@@ -17,9 +17,9 @@ const Navbar1 = () => {
   return (
     <nav className="flex items-center z-10 justify-between px-2 py-0 bg-white w-full text-center">
       {/* Logo */}
-      <div className="flex items-center text-center">
+      <div className="flex items-center text-center mt-2">
         <img src={logo} className="w-12 h-12 mr-2" alt="Logo" />
-        <h1 className="text-xl md:text-2xl font-bold">
+        <h1 className="text-xl md:text-2xl font-bold ">
           <span className="text-black" />
           <span className="text-red-600">AUTO</span>
           <span className="text-black">TRANSPORT</span>
@@ -37,7 +37,7 @@ const Navbar1 = () => {
       </div>
 
       {/* Nav Links (Desktop) */}
-      <div className="hidden md:flex space-x-8 text-lg font-semibold text-center items-center justify-center">
+      <div className="hidden md:flex space-x-8 text-lg mt-2 font-semibold text-center items-center justify-center">
         <Link to="/" className="hover:text-orange-500 no-underline">
           Home
         </Link>
@@ -58,11 +58,11 @@ const Navbar1 = () => {
       {/* Contact & Button */}
       <div className="hidden md:flex items-center space-x-6 justify-center">
         <div className="flex items-center text-lg">
-          <FiPhoneCall className="text-orange-500 text-2xl" />
-          <span className="ml-2 text-gray-700 font-medium">+91-9953253431</span>
+          <FiPhoneCall className="text-orange-500 text-2xl mt-2" />
+          <span className="ml-2 mt-2 text-gray-700 font-medium">+91-9953253431</span>
         </div>
         <button
-          className="bg-green-500 text-white rounded-full px-4 py-2 hover:bg-green-600 transition"
+          className="bg-green-500 text-white rounded-full px-4 py-2 mt-2 hover:bg-green-600 transition"
           onClick={() => window.open(whatsappURL, "_blank")}
         >
           WhatsApp

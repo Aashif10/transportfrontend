@@ -49,8 +49,8 @@ const slides = [
     image: img8,
     quote: "Every journey starts with a single step"
   },
-   {
-    image: img9,
+  {
+    image:img9,
     quote: "Connections made through transport, journeys unite people"
   }
 ];
