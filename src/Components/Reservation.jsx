@@ -19,7 +19,7 @@ const Reservation = () => {
   const handleReservation = e => {
     e.preventDefault();
     emailjs
-      .sendForm("service_spd0cja", "template_f9bshyo", form.current, {
+      .sendForm("service_tu1jjxj", "template_f9bshyo", form.current, {
         publicKey: "5k8eHRGbcejoAsdY-"
       })
       .then(
