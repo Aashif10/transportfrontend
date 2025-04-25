@@ -19,8 +19,8 @@ const Reservation = () => {
   const handleReservation = e => {
     e.preventDefault();
     emailjs
-      .sendForm("service_tu1jjxj", "template_f9bshyo", form.current, {
-        publicKey: "5k8eHRGbcejoAsdY-"
+      .sendForm("service_j3sxof6", "template_0ib24ll", form.current, {
+        publicKey: "l0N0vuc5cmAf8xixh"
       })
       .then(
         () => {
