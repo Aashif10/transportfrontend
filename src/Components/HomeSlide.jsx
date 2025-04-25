@@ -43,7 +43,7 @@ const slides = [
   },
   {
     image: img7,
-    quote: "ransport connects us, beyond boundaries"
+    quote: "Transport connects us, beyond boundaries"
   },
   {
     image: img8,
