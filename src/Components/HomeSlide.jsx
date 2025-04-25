@@ -57,12 +57,29 @@ const slides = [
 
 function HomeSlide() {
   const [current, setCurrent] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
   const path = window.location.pathname;
    const phoneNumber = "+918527669072";
   const message = "Hello, I would like to inquiry about your services!";
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
   )}`;
+
+  // Preload images
+  useEffect(() => {
+    const preloadImages = () => {
+      slides.forEach(slide => {
+        const img = new Image();
+        img.src = slide.image;
+      });
+    };
+    preloadImages();
+  }, []);
+
+  // Handle image load
+  const handleImageLoad = () => {
+    setIsLoading(false);
+  };
 
   // Autoplay: Change slide every 3 seconds
   useEffect(
@@ -120,10 +137,19 @@ function HomeSlide() {
           >
             {/* Image */}
             <img
-              className="w-full h-full "
+              className={`w-full h-full object-cover transition-opacity duration-300 ${isLoading ? 'opacity-0' : 'opacity-100'}`}
               src={slide.image}
               alt={`Slide ${index + 1}`}
+              onLoad={handleImageLoad}
+              loading="eager"
             />
+
+            {/* Loading State */}
+            {isLoading && (
+              <div className="absolute inset-0 flex items-center justify-center bg-gray-200">
+                <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-orange-500"></div>
+              </div>
+            )}
 
             {/* Overlay Content */}
             <div className="absolute   inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-white text-center px-4">
